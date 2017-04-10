@@ -1,0 +1,1 @@
+our email address will be visible on commits to GitHub. If you'd like to keep your email address private, set your Git config email to username@users.noreply.github.com instead, replacing username with your GitHub username. For more information, see "Keeping your email address private."
