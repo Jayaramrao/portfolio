@@ -1,0 +1,36 @@
+server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            #root   html;
+			root "C:/Users/c5221128/Downloads/nginxhtmlfimes";
+            index  index.html index.htm;
+        }
+
+
+
+--------------------------------------------------------------------
+
+404 page not found and 500 internal server error :
+
+server {
+        listen       80;
+        server_name  localhost;
+        location / {
+	    #root html;
+            root "C:/Users/c5221128/Downloads/nginxhtmlfimes";
+            index  index.html index.htm;
+        }
+        error_page  404              /404.html;
+    location  /404.html {
+        internal;
+    }
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+   }
